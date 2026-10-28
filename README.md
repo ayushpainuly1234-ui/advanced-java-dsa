@@ -1,32 +1,29 @@
 # Advanced Java DSA
 
-A personal collection of Java implementations and a study roadmap for data structures and algorithms.
+A topic-organized collection of Java implementations and interview-preparation notes for data structures and algorithms.
 
-## Repository map
+## Repository structure
 
-- **[Trees](trees/)** — binary-tree traversal, construction, tree properties, path problems and binary search tree operations.
-- **[Backtracking practice](trees/backtraking/)** — permutations, maze/path problems, N-Queens and knight-related exercises.
-- **[Dynamic programming roadmap](dp/DP_PROBLEM_ROADMAP.md)** — a topic-wise list of LeetCode / GFG problems grouped by 1D DP, 2D DP, knapsack/subset, tree DP, bitmask DP and harder DP patterns.
-- **Graph exercises** currently live under [trees/backtraking/graph](trees/backtraking/graph/); this is a legacy path and can be moved into a top-level graphs directory as the repository is reorganised.
+| Topic | Directory | What you'll find |
+|---|---|---|
+| Dynamic programming | [dp/](dp/) | Problem roadmap grouped by common DP patterns |
+| Trees | [trees/](trees/) | Traversals, construction, tree properties, path problems, and BST operations |
+| Graphs | [graphs/](graphs/) | BFS/DFS, cycle detection, shortest paths, minimum spanning trees, topological sorting, and connectivity algorithms |
+| Backtracking | [backtracking/](backtracking/) | Permutations, maze/path search, N-Queens, and knight-move problems |
 
-## How to use
+Each topic has its own README with a quick index. Graph algorithms and backtracking exercises are intentionally kept in separate top-level folders.
 
-1. Pick one topic or source file.
-2. Read the code and dry-run it on a small input.
-3. Compile/run one standalone Java program at a time. These exercises are not packaged as one Maven/Gradle application.
-4. Before using a solution as an interview reference, verify edge cases and its time/space complexity.
+## Suggested workflow
 
-## Learning goals
-
-- Understand recursion and tree traversals.
-- Practise binary-tree and BST operations.
-- Build familiarity with backtracking patterns.
-- Track DP problem practice by technique, not only by problem count.
+1. Choose one topic and read its README or roadmap.
+2. Dry-run a solution on a small input before running it.
+3. Compile and run one standalone Java file at a time; this repository is a collection of exercises, not one Maven/Gradle application.
+4. For interview practice, be ready to explain the state/approach, edge cases, and time and space complexity.
 
 ## Related repository
 
-For Java fundamentals, pattern-printing exercises, arrays and matrix practice, see [java-dsa-practice](https://github.com/ayushpainuly1234-ui/java-dsa-practice).
+For Java fundamentals, pattern-printing exercises, arrays, and matrix practice, see [java-dsa-practice](https://github.com/ayushpainuly1234-ui/java-dsa-practice).
 
 ## Scope
 
-This is a learning repository, not a claim that every listed problem is solved or that every file has been independently tested. Contributions and improvements should keep examples understandable and preserve problem references where available.
+This is a learning repository. The roadmap is a study reference, not a claim that every listed problem is completed or every program has been independently tested. Existing exercise filenames are retained to keep this reorganization focused on structure and discoverability.
