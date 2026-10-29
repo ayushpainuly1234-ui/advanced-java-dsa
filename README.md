@@ -1,29 +1,29 @@
 # Advanced Java DSA
 
-A topic-organized collection of Java implementations and interview-preparation notes for data structures and algorithms.
+A topic-organised Java repository for data structures, graph algorithms, dynamic programming, trees, and backtracking. The goal is to make practice code easy to navigate and useful for dry runs and interview preparation.
 
-## Repository structure
+## Explore by topic
 
-| Topic | Directory | What you'll find |
-|---|---|---|
-| Dynamic programming | [dp/](dp/) | Problem roadmap grouped by common DP patterns |
-| Trees | [trees/](trees/) | Traversals, construction, tree properties, path problems, and BST operations |
-| Graphs | [graphs/](graphs/) | BFS/DFS, cycle detection, shortest paths, minimum spanning trees, topological sorting, and connectivity algorithms |
-| Backtracking | [backtracking/](backtracking/) | Permutations, maze/path search, N-Queens, and knight-move problems |
+| Topic | What you'll find |
+|---|---|
+| **[Graphs](graphs/README.md)** | BFS/DFS, cycle detection, shortest paths (Dijkstra and Bellman–Ford), spanning trees (Prim), topological ordering, articulation points, Kosaraju/Tarjan, and directed-graph exercises |
+| **[Dynamic programming](dp/README.md)** | [DP problem roadmap](dp/DP_PROBLEM_ROADMAP.md) grouped by 1D/2D, string, knapsack/subset, tree, bitmask, interval, and optimisation patterns |
+| **[Backtracking](backtracking/README.md)** | Permutations, maze/path search, N-Queens, and knight-move/grid-search exercises |
+| **[Trees](trees/README.md)** | Traversals, tree construction and properties, path problems, transformations, BST operations, and LCA topics |
 
-Each topic has its own README with a quick index. Graph algorithms and backtracking exercises are intentionally kept in separate top-level folders.
+## Suggested interview-practice workflow
 
-## Suggested workflow
+1. **State the problem and constraints.** Write down input size, edge cases, and what must be returned.
+2. **Choose a pattern.** For example, BFS/DFS for traversal, Dijkstra for non-negative weighted shortest paths, or DP when overlapping subproblems and reusable state are present.
+3. **Dry-run a small case.** Track the state, transitions, visited set, recursion stack, or DP table explicitly.
+4. **Verify correctness.** Test an ordinary case, a boundary case, and a case where the initial intuition fails.
+5. **Record complexity.** Explain time and auxiliary space in terms of the input size.
+6. **Compile and run one standalone file at a time.** The repository is a collection of practice programs, not one Maven/Gradle application.
 
-1. Choose one topic and read its README or roadmap.
-2. Dry-run a solution on a small input before running it.
-3. Compile and run one standalone Java file at a time; this repository is a collection of exercises, not one Maven/Gradle application.
-4. For interview practice, be ready to explain the state/approach, edge cases, and time and space complexity.
+## Important scope note
+
+This is a learning and interview-preparation repository. The DP roadmap is a reference list; it does **not** claim that every listed problem has been solved. Individual Java files should be reviewed and tested before using them as production-ready implementations. Existing exercise filenames are retained to keep the repository focused on discoverability rather than a broad rename.
 
 ## Related repository
 
-For Java fundamentals, pattern-printing exercises, arrays, and matrix practice, see [java-dsa-practice](https://github.com/ayushpainuly1234-ui/java-dsa-practice).
-
-## Scope
-
-This is a learning repository. The roadmap is a study reference, not a claim that every listed problem is completed or every program has been independently tested. Existing exercise filenames are retained to keep this reorganization focused on structure and discoverability.
+For introductory Java exercises, arrays, strings, matrix problems, and programming fundamentals, see [Java DSA Practice](https://github.com/ayushpainuly1234-ui/java-dsa-practice).
